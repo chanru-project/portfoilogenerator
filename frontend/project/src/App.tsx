@@ -41,19 +41,19 @@ function AppContent() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex flex-col sm:flex-row items-center justify-between py-4 sm:h-16 space-y-3 sm:space-y-0">
             <div className="flex items-center space-x-3">
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Portfolio Generator</h1>
-                <p className="text-sm text-gray-500">Convert Markdown to beautiful portfolios</p>
+              <div className="text-center sm:text-left">
+                <h1 className="text-lg sm:text-xl font-bold text-gray-900">Portfolio Generator</h1>
+                <p className="text-xs sm:text-sm text-gray-500">Convert Markdown to beautiful portfolios</p>
               </div>
             </div>
             <button
               onClick={loadSampleData}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium w-full sm:w-auto"
             >
               Load Sample Data
             </button>
@@ -61,10 +61,10 @@ function AppContent() {
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-8">
           {/* Left Panel - Controls */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="xl:col-span-1 space-y-4 sm:space-y-6">
             {/* Tab Navigation */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-1">
               <div className="flex space-x-1">
@@ -74,13 +74,13 @@ function AppContent() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id as any)}
-                      className={`flex-1 flex items-center justify-center space-x-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+                      className={`flex-1 flex items-center justify-center space-x-1 sm:space-x-2 py-2 px-2 sm:px-3 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                         activeTab === tab.id
                           ? 'bg-blue-100 text-blue-700'
                           : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
                       }`}
                     >
-                      <Icon className="w-4 h-4" />
+                      <Icon className="w-3 h-3 sm:w-4 sm:h-4" />
                       <span className="hidden sm:inline">{tab.label}</span>
                     </button>
                   );
@@ -116,19 +116,19 @@ function AppContent() {
           </div>
 
           {/* Right Panel - Preview */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-              <div className="flex items-center justify-between mb-4">
+          <div className="xl:col-span-2">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 space-y-2 sm:space-y-0">
                 <div className="flex items-center space-x-2">
-                  <Eye className="w-5 h-5 text-gray-600" />
-                  <h2 className="text-lg font-semibold text-gray-900">Live Preview</h2>
+                  <Eye className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+                  <h2 className="text-base sm:text-lg font-semibold text-gray-900">Live Preview</h2>
                 </div>
-                <div className="text-sm text-gray-500">
+                <div className="text-xs sm:text-sm text-gray-500">
                   Updates automatically as you type
                 </div>
               </div>
               
-              <div className="border border-gray-200 rounded-lg p-4 bg-gray-50 max-h-screen overflow-y-auto">
+              <div className="border border-gray-200 rounded-lg p-2 sm:p-4 bg-gray-50 max-h-screen overflow-y-auto">
                 <PortfolioPreview portfolio={portfolio} />
               </div>
             </div>

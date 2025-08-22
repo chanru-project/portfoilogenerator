@@ -41,16 +41,16 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
     >
       {/* Header Section */}
       <div className="relative" style={primaryBgStyle}>
-        <div className="px-8 py-12 text-center">
-          <h1 className="text-4xl font-bold text-white mb-2">
+        <div className="px-4 sm:px-8 py-8 sm:py-12 text-center">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
             {portfolio.personalInfo.name || 'Your Name'}
           </h1>
-          <p className="text-xl text-white opacity-90">
+          <p className="text-lg sm:text-xl text-white opacity-90">
             {portfolio.personalInfo.title || 'Your Professional Title'}
           </p>
           
           {/* Contact Info */}
-          <div className="flex flex-wrap justify-center gap-6 mt-6">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-4 sm:mt-6">
             {portfolio.personalInfo.email && (
               <div className="flex items-center space-x-2 text-white opacity-90">
                 <Mail className="w-4 h-4" />
@@ -72,7 +72,7 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
           </div>
           
           {/* Social Links */}
-          <div className="flex justify-center space-x-4 mt-4">
+          <div className="flex justify-center space-x-3 sm:space-x-4 mt-3 sm:mt-4">
             {portfolio.personalInfo.website && (
               <a
                 href={portfolio.personalInfo.website}
@@ -107,14 +107,14 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
         </div>
       </div>
 
-      <div className="p-8 space-y-8">
+      <div className="p-4 sm:p-6 lg:p-8 space-y-6 sm:space-y-8">
         {/* Summary Section */}
         {portfolio.summary && (
-          <section className="p-6 rounded-lg" style={sectionStyle}>
-            <h2 className="text-2xl font-bold mb-4" style={primaryTextStyle}>
+          <section className="p-4 sm:p-6 rounded-lg" style={sectionStyle}>
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={primaryTextStyle}>
               Summary
             </h2>
-            <p className="leading-relaxed" style={secondaryTextStyle}>
+            <p className="leading-relaxed text-sm sm:text-base" style={secondaryTextStyle}>
               {portfolio.summary}
             </p>
           </section>
@@ -122,24 +122,24 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
 
         {/* Experience Section */}
         {portfolio.experience.length > 0 && (
-          <section className="p-6 rounded-lg" style={sectionStyle}>
-            <h2 className="text-2xl font-bold mb-6" style={primaryTextStyle}>
+          <section className="p-4 sm:p-6 rounded-lg" style={sectionStyle}>
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6" style={primaryTextStyle}>
               Experience
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {portfolio.experience.map((exp, index) => (
-                <div key={index} className="border-l-4 pl-4" style={{ borderColor: currentTheme.colors.primary }}>
-                  <h3 className="text-xl font-semibold" style={primaryTextStyle}>
+                <div key={index} className="border-l-4 pl-3 sm:pl-4" style={{ borderColor: currentTheme.colors.primary }}>
+                  <h3 className="text-lg sm:text-xl font-semibold" style={primaryTextStyle}>
                     {exp.title}
                   </h3>
-                  <p className="font-medium mb-2" style={accentStyle}>
+                  <p className="font-medium mb-2 text-sm sm:text-base" style={accentStyle}>
                     {exp.company} {exp.location && `• ${exp.location}`}
                   </p>
-                  <div className="flex items-center space-x-2 mb-3 text-sm" style={secondaryTextStyle}>
-                    <Calendar className="w-4 h-4" />
+                  <div className="flex items-center space-x-2 mb-2 sm:mb-3 text-xs sm:text-sm" style={secondaryTextStyle}>
+                    <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                     <span>{exp.startDate} - {exp.endDate}</span>
                   </div>
-                  <p className="leading-relaxed" style={secondaryTextStyle}>
+                  <p className="leading-relaxed text-sm sm:text-base" style={secondaryTextStyle}>
                     {exp.description}
                   </p>
                 </div>
@@ -150,15 +150,15 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
 
         {/* Skills Section */}
         {portfolio.skills.length > 0 && (
-          <section className="p-6 rounded-lg" style={sectionStyle}>
-            <h2 className="text-2xl font-bold mb-4" style={primaryTextStyle}>
+          <section className="p-4 sm:p-6 rounded-lg" style={sectionStyle}>
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={primaryTextStyle}>
               Skills
             </h2>
             <div className="flex flex-wrap gap-2">
               {portfolio.skills.map((skill, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 rounded-full text-sm font-medium text-white"
+                  className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium text-white"
                   style={primaryBgStyle}
                 >
                   {skill}
@@ -170,15 +170,15 @@ export const PortfolioPreview: React.FC<PortfolioPreviewProps> = ({
 
         {/* Projects Section */}
         {portfolio.projects.length > 0 && (
-          <section className="p-6 rounded-lg" style={sectionStyle}>
-            <h2 className="text-2xl font-bold mb-6" style={primaryTextStyle}>
+          <section className="p-4 sm:p-6 rounded-lg" style={sectionStyle}>
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6" style={primaryTextStyle}>
               Projects
             </h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
               {portfolio.projects.map((project, index) => (
-                <div key={index} className="p-4 border rounded-lg" style={{ borderColor: currentTheme.colors.primary + '30' }}>
+                <div key={index} className="p-3 sm:p-4 border rounded-lg" style={{ borderColor: currentTheme.colors.primary + '30' }}>
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-lg font-semibold" style={primaryTextStyle}>
+                    <h3 className="text-base sm:text-lg font-semibold" style={primaryTextStyle}>
                       {project.name}
                     </h3>
                     <div className="flex space-x-2">
