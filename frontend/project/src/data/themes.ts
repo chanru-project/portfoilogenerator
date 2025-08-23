@@ -57,4 +57,18 @@ export const themes: Theme[] = [
       textSecondary: '#718096',
     },
   },
+  {
+    id: 'dark',
+    name: 'Dark',
+    description: 'Easy on the eyes',
+    colors: {
+      primary: '#6366F1',
+      secondary: '#4F46E5',
+      accent: '#F59E0B',
+      background: '#0F172A',
+      surface: '#1E293B',
+      text: '#F1F5F9',
+      textSecondary: '#94A3B8',
+    },
+  },
 ];

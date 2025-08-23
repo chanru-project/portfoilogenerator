@@ -41,7 +41,7 @@ export interface Project {
   github?: string;
 }
 
-export type ThemeType = 'modern' | 'classic' | 'minimal' | 'creative';
+export type ThemeType = 'modern' | 'classic' | 'minimal' | 'creative' | 'dark';
 
 export interface Theme {
   id: ThemeType;
