@@ -2,6 +2,8 @@
 
 A modern, full-stack web application that converts Markdown-based resumes and portfolios into beautiful, customizable websites. Built with React, TypeScript, and Node.js.
 
+---
+
 ## ✨ Features
 
 ### 🎨 **Multiple Themes**
@@ -14,7 +16,7 @@ A modern, full-stack web application that converts Markdown-based resumes and po
 - Live preview as you type
 - Sample data for quick start
 - Syntax highlighting
-  
+
 ### 📤 **Export Options**
 - **HTML Export**: Standalone HTML files with embedded CSS
 - **PDF Export**: Print-to-PDF functionality
@@ -27,84 +29,91 @@ A modern, full-stack web application that converts Markdown-based resumes and po
 - Professional typography
 - Hover effects and animations
 
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React 18** - Modern UI library
-- **TypeScript** - Type-safe development
-- **Vite** - Fast build tool
-- **Tailwind CSS** - Utility-first styling
-- **Lucide React** - Modern icons
-- **Remark** - Markdown parsing
+- **React 18** - Modern UI library  
+- **TypeScript** - Type-safe development  
+- **Vite** - Fast build tool  
+- **Tailwind CSS** - Utility-first styling  
+- **Lucide React** - Modern icons  
+- **Remark** - Markdown parsing  
 
 ### Backend
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web framework
-- **Multer** - File upload handling
-- **CORS** - Cross-origin support
+- **Node.js** - JavaScript runtime  
+- **Express.js** - Web framework  
+- **Multer** - File upload handling  
+- **CORS** - Cross-origin support  
 
 ### Deployment
-- **GitHub Pages** - Static hosting
-- **Netlify** - Continuous deployment
-- **Render** - Backend hosting
-- **Vercel** - Alternative deployment
+- **GitHub Pages** - Static hosting  
+- **Netlify** - Continuous deployment  
+- **Render** - Backend hosting  
+- **Vercel** - Alternative deployment  
 
-```
+---
 
 ## 🌐 Deployment Options
 
 ### GitHub Pages (Recommended)
-1. Download HTML file from the app
-2. Create GitHub repository
-3. Upload HTML as `index.html`
-4. Enable GitHub Pages in settings
-5. Your portfolio is live at `username.github.io/repository-name`
+1. Download HTML file from the app  
+2. Create GitHub repository  
+3. Upload HTML as `index.html`  
+4. Enable GitHub Pages in settings  
+5. Your portfolio is live at `username.github.io/repository-name`  
 
-
+---
 
 ## 🔧 Customization
 
 ### Adding New Themes
-1. Edit `src/data/themes.ts`
-2. Add new theme object
-3. Update `ThemeType` in `src/types/index.ts`
+1. Edit `src/data/themes.ts`  
+2. Add new theme object  
+3. Update `ThemeType` in `src/types/index.ts`  
 
 ### Modifying Styles
-- Edit CSS variables in `ExportOptions.tsx`
-- Customize Tailwind classes in components
-- Add custom CSS in `index.css`
+- Edit CSS variables in `ExportOptions.tsx`  
+- Customize Tailwind classes in components  
+- Add custom CSS in `index.css`  
 
 ### Extending Features
-- Add new portfolio sections in types
-- Update markdown parser for new fields
-- Enhance export options
+- Add new portfolio sections in types  
+- Update markdown parser for new fields  
+- Enhance export options  
+
+---
 
 ## 📊 Performance
 
-- **Bundle Size**: ~200KB gzipped
-- **Load Time**: <2 seconds on 3G
-- **Lighthouse Score**: 95+ across all metrics
-- **Mobile Performance**: Optimized for all devices
+- **Bundle Size**: ~200KB gzipped  
+- **Load Time**: <2 seconds on 3G  
+- **Lighthouse Score**: 95+ across all metrics  
+- **Mobile Performance**: Optimized for all devices  
+
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+1. Fork the repository  
+2. Create feature branch (`git checkout -b feature/amazing-feature`)  
+3. Commit changes (`git commit -m 'Add amazing feature'`)  
+4. Push to branch (`git push origin feature/amazing-feature`)  
+5. Open Pull Request  
+
+---
 
 ## 🚀 Live Demo  
-🔗 [Click here to view the live site](https://app.netlify.com/projects/sprightly-chimera-fd4bea/overview)
+🔗 [Click here to view the live site](https://sprightly-chimera-fd4bea.netlify.app/)  
 
+---
 
 ## 📸 Preview  
-![Git Hup](https://github.com/chanru-project/portfoilogenerator.git)
+![Preview Screenshot](https://github.com/chanru-project/portfoilogenerator.git)  
+
+---
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/chanru-project/portfoiliogenerator/blob/main/LICENSE) file for details.
-
----
-
-
