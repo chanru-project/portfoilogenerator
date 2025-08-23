@@ -99,11 +99,6 @@ Backend:
 cd backend
 npm start
 ```
-
-5. **Open your browser**
-- Frontend: http://localhost:5173
-- Backend: http://localhost:5000
-
 ## 📁 Project Structure
 
 ```
@@ -156,7 +151,7 @@ portfolio-generator/
 - Phone: (555) 123-4567
 - Location: Your City, State
 - Website: https://yourwebsite.com
-- LinkedIn: https://linkedin.com/in/yourprofile
+- LinkedIn: https://linkedin.com/in/yourprofil
 - GitHub: https://github.com/yourusername
 - Title: Your Professional Title
 
@@ -236,23 +231,16 @@ Your professional summary here...
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
+## 🚀 Live Demo  
+🔗 [Click here to view the live site](https://sprightly-chimera-fd4bea.netlify.app/)
+
+
+## 📸 Preview  
+![Git Hup](https://your-live-link.vercel.app/screenshot.png)
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [React](https://reactjs.org/) - UI library
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-- [Vite](https://vitejs.dev/) - Build tool
-- [Lucide](https://lucide.dev/) - Icons
-- [Remark](https://remark.js.org/) - Markdown processing
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/portfolio-generator/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/portfolio-generator/discussions)
-- **Email**: your.email@example.com
 
 ---
 
