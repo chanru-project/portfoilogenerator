@@ -105,7 +105,7 @@ A modern, full-stack web application that converts Markdown-based resumes and po
 ---
 
 ## 🚀 Live Demo  
-🔗 [Click here to view the live site](https://sprightly-chimera-fd4bea.netlify.app/)  
+🔗 [Click here to view the live site](https://developerportfoliogenerator.netlify.app/)  
 
 ---
 
